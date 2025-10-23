@@ -1,10 +1,4 @@
-import 'package:cashier_app_source/screens/forgot_password.dart';
-import 'package:cashier_app_source/screens/home.dart';
-import 'package:cashier_app_source/screens/otp.dart';
-import 'package:cashier_app_source/screens/profile.dart';
-import 'package:cashier_app_source/screens/register.dart';
-import 'package:cashier_app_source/screens/statement.dart';
-import 'package:cashier_app_source/screens/success.dart';
+import 'package:cashier_app_source/screens/bonus.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/welcome.dart';
@@ -24,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: WelcomeScreen(),
+      home: BonusScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

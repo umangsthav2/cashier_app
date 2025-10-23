@@ -129,12 +129,14 @@ class ProfileScreen extends StatelessWidget {
                         minimumSize: Size(double.infinity, 50),
                       ),
                       onPressed: () {
-                        Navigator.push(bc,MaterialPageRoute(builder: (newpage)=>StatementScreen()));
+                        Navigator.push(
+                          bc,
+                          MaterialPageRoute(
+                            builder: (newpage) => StatementScreen(),
+                          ),
+                        );
                       },
-                      icon: Icon(
-                        Icons.list,
-                        color: Color(brandWhite),
-                      ),
+                      icon: Icon(Icons.list, color: Color(brandWhite)),
                       label: Text(
                         "Statement",
                         style: TextStyle(
