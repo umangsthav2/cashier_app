@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/welcome.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
@@ -9,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: Color(brandBlack),
       body: SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(bc).size.height,
+          // height: MediaQuery.of(bc).size.height,
           child: Padding(
             padding: EdgeInsets.all(30),
             child: SizedBox(
@@ -53,21 +54,32 @@ class ProfileScreen extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.only(top: 05, bottom: 20),
                           child: SizedBox(
-                            width: 200,
-                            child: TextField(
-                              textAlign: TextAlign.center,
-                              decoration: InputDecoration(
-                                hintText: "Total Deposit",
-                                suffixIcon: IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.remove_red_eye_rounded),
+                            width: 120,
+                            child: Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Text(
+                                    "Total Deposit",
+                                    style: TextStyle(color: Color(brandGrey)),
+                                  ),
                                 ),
-                                filled: true,
-                                fillColor: Color(brandWhite),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(12),
+                                TextField(
+                                  textAlign: TextAlign.center,
+                                  decoration: InputDecoration(
+                                    // hintText: "Total Deposit",
+                                    suffixIcon: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.remove_red_eye_rounded),
+                                    ),
+                                    filled: true,
+                                    fillColor: Color(brandWhite),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
                                 ),
-                              ),
+                              ],
                             ),
                           ),
                         ),
@@ -77,21 +89,32 @@ class ProfileScreen extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.only(top: 05, bottom: 20),
                           child: SizedBox(
-                            width: 200,
-                            child: TextField(
-                              textAlign: TextAlign.center,
-                              decoration: InputDecoration(
-                                suffixIcon: IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(Icons.remove_red_eye_rounded),
+                            width: 120,
+                            child: Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Text(
+                                    "Total Withdraw",
+                                    style: TextStyle(color: Color(brandGrey)),
+                                  ),
                                 ),
-                                hintText: "Total Withdraw",
-                                filled: true,
-                                fillColor: Color(brandWhite),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(12),
+                                TextField(
+                                  textAlign: TextAlign.center,
+                                  decoration: InputDecoration(
+                                    suffixIcon: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.remove_red_eye_rounded),
+                                    ),
+                                    hintText: "",
+                                    filled: true,
+                                    fillColor: Color(brandWhite),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
                                 ),
-                              ),
+                              ],
                             ),
                           ),
                         ),
@@ -164,7 +187,7 @@ class ProfileScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.support_agent),
-                        hintText: "Rate Cashier App",
+                        hintText: "Customer Support",
                         filled: true,
                         fillColor: Color(brandWhite),
                         border: OutlineInputBorder(
@@ -180,7 +203,9 @@ class ProfileScreen extends StatelessWidget {
                         backgroundColor: Color(primaryColor),
                         minimumSize: Size(double.infinity, 50),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(bc, MaterialPageRoute(builder: (newpage)=>WelcomeScreen()));
+                      },
                       child: Text(
                         "Logout",
                         style: TextStyle(

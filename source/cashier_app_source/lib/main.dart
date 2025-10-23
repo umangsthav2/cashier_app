@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: HomeScreen(),
+      home: WelcomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

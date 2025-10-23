@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/home.dart';
 import 'package:cashier_app_source/screens/register.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
@@ -88,7 +89,9 @@ class WelcomeScreen extends StatelessWidget {
                       backgroundColor: Color(primaryColor),
                       minimumSize: Size(double.infinity, 50),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(bc,MaterialPageRoute(builder: (newpage)=>HomeScreen()));
+                    },
                     child: Text(
                       "Login",
                       style: TextStyle(

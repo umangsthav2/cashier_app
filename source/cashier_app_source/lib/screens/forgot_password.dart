@@ -1,3 +1,4 @@
+import 'package:cashier_app_source/screens/otp.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
@@ -28,6 +29,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 60, bottom: 10),
                     child: TextField(
+                      maxLength: 10,
+                      keyboardType: TextInputType.number,
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
                         hintText: "Registered Mobile Number",
@@ -46,7 +49,9 @@ class ForgotPasswordScreen extends StatelessWidget {
                         backgroundColor: Color(primaryColor),
                         minimumSize: Size(double.infinity, 50),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(bc,MaterialPageRoute(builder: (newpage)=>OTPScreen()));
+                      },
                       child: Text(
                         "Send OTP",
                         style: TextStyle(

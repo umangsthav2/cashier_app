@@ -9,7 +9,7 @@ class RegisterScreen extends StatelessWidget {
       backgroundColor: Color(brandBlack),
       body: SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(bc).size.height,
+          // height: MediaQuery.of(bc).size.height,
           child: Padding(
             padding: EdgeInsets.all(30),
             child: SizedBox(
@@ -27,7 +27,7 @@ class RegisterScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(bottom:50),
+                    padding: const EdgeInsets.only(bottom: 50),
                     child: Text(
                       "Register",
                       style: TextStyle(
@@ -39,7 +39,11 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Text("Enter your Email Address",style: TextStyle(color:Color(brandGrey),))),
+                    child: Text(
+                      "Enter your Email Address",
+                      style: TextStyle(color: Color(brandGrey)),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
                     child: TextField(
@@ -56,7 +60,11 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Text("Enter your Username",style: TextStyle(color:Color(brandGrey),))),
+                    child: Text(
+                      "Enter your Username",
+                      style: TextStyle(color: Color(brandGrey)),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
                     child: TextField(
@@ -73,7 +81,11 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Text("Enter your DOB",style: TextStyle(color:Color(brandGrey),))),
+                    child: Text(
+                      "Enter your DOB",
+                      style: TextStyle(color: Color(brandGrey)),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
                     child: TextField(
@@ -90,7 +102,11 @@ class RegisterScreen extends StatelessWidget {
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Text("Enter your Password",style: TextStyle(color:Color(brandGrey),))),
+                    child: Text(
+                      "Enter your Password",
+                      style: TextStyle(color: Color(brandGrey)),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
                     child: TextField(
@@ -106,7 +122,7 @@ class RegisterScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top:30),
+                    padding: const EdgeInsets.only(top: 30),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color(primaryColor),
