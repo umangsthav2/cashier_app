@@ -1,3 +1,4 @@
+import 'package:cashier_app_source/screens/forgot_password.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
@@ -66,7 +67,9 @@ class WelcomeScreen extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerRight,
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(bc,MaterialPageRoute(builder:(context)=>ForgotPassword(),));
+                        },
                         child: Text(
                           "Forgot Password?",
                           textAlign: TextAlign.right,
