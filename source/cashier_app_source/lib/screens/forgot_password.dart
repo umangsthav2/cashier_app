@@ -50,7 +50,10 @@ class ForgotPasswordScreen extends StatelessWidget {
                         minimumSize: Size(double.infinity, 50),
                       ),
                       onPressed: () {
-                        Navigator.pushReplacement(bc,MaterialPageRoute(builder: (newpage)=>OTPScreen()));
+                        Navigator.pushReplacement(
+                          bc,
+                          MaterialPageRoute(builder: (newpage) => OTPScreen()),
+                        );
                       },
                       child: Text(
                         "Send OTP",

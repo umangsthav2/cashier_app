@@ -22,8 +22,11 @@ class SuccessScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(bottom:100),
-                    child: SvgPicture.asset("assets/icons/success.svg",height:150),
+                    padding: const EdgeInsets.only(bottom: 100),
+                    child: SvgPicture.asset(
+                      "assets/icons/success.svg",
+                      height: 150,
+                    ),
                   ),
                   Text(
                     "Success!",
@@ -34,7 +37,7 @@ class SuccessScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top:25),
+                    padding: const EdgeInsets.only(top: 25),
                     child: Text(
                       "You have successfully Withdrawn in pubg game and can start Playing it",
                       textAlign: TextAlign.center,
@@ -53,7 +56,10 @@ class SuccessScreen extends StatelessWidget {
                         minimumSize: Size(double.infinity, 50),
                       ),
                       onPressed: () {
-                        Navigator.push(bc,MaterialPageRoute(builder: (newpage)=>HomeScreen()));
+                        Navigator.push(
+                          bc,
+                          MaterialPageRoute(builder: (newpage) => HomeScreen()),
+                        );
                       },
                       child: Text(
                         "Done",

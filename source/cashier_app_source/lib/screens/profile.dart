@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/statement.dart';
 import 'package:cashier_app_source/screens/welcome.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
@@ -10,7 +11,6 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: Color(brandBlack),
       body: SingleChildScrollView(
         child: Container(
-          // height: MediaQuery.of(bc).size.height,
           child: Padding(
             padding: EdgeInsets.all(30),
             child: SizedBox(
@@ -123,15 +123,24 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
-                    child: TextField(
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.list),
-                        hintText: "Statement",
-                        filled: true,
-                        fillColor: Color(brandWhite),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(primaryColor),
+                        minimumSize: Size(double.infinity, 50),
+                      ),
+                      onPressed: () {
+                        Navigator.push(bc,MaterialPageRoute(builder: (newpage)=>StatementScreen()));
+                      },
+                      icon: Icon(
+                        Icons.list,
+                        color: Color(brandWhite),
+                      ),
+                      label: Text(
+                        "Statement",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Color(brandWhite),
                         ),
                       ),
                     ),
@@ -204,7 +213,12 @@ class ProfileScreen extends StatelessWidget {
                         minimumSize: Size(double.infinity, 50),
                       ),
                       onPressed: () {
-                        Navigator.pushReplacement(bc, MaterialPageRoute(builder: (newpage)=>WelcomeScreen()));
+                        Navigator.pushReplacement(
+                          bc,
+                          MaterialPageRoute(
+                            builder: (newpage) => WelcomeScreen(),
+                          ),
+                        );
                       },
                       child: Text(
                         "Logout",

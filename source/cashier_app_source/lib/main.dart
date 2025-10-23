@@ -3,6 +3,7 @@ import 'package:cashier_app_source/screens/home.dart';
 import 'package:cashier_app_source/screens/otp.dart';
 import 'package:cashier_app_source/screens/profile.dart';
 import 'package:cashier_app_source/screens/register.dart';
+import 'package:cashier_app_source/screens/statement.dart';
 import 'package:cashier_app_source/screens/success.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: SuccessScreen(),
+      home: WelcomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
