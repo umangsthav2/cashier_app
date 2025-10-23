@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
-class ForgotPassword extends StatelessWidget {
+class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext bc) {
     return Scaffold(

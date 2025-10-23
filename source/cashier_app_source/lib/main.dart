@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/register.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/welcome.dart';

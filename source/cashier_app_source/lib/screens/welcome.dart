@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/register.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
@@ -68,7 +69,7 @@ class WelcomeScreen extends StatelessWidget {
                       alignment: Alignment.centerRight,
                       child: InkWell(
                         onTap: () {
-                          Navigator.push(bc,MaterialPageRoute(builder:(context)=>ForgotPassword(),));
+                          Navigator.push(bc,MaterialPageRoute(builder:(context)=>ForgotPasswordScreen(),));
                         },
                         child: Text(
                           "Forgot Password?",
@@ -100,7 +101,7 @@ class WelcomeScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 30, bottom: 10),
                     child: Text(
-                      "Already have an Account ?",
+                      "New to this App ?",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
@@ -109,7 +110,9 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(bc,MaterialPageRoute(builder: (context)=>RegisterScreen()));
+                    },
                     child: Text(
                       "Register for Free",
                       style: TextStyle(
