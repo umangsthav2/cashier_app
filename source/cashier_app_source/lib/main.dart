@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/profile.dart';
 import 'package:cashier_app_source/screens/register.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: WelcomeScreen(),
+      home: ProfileScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
