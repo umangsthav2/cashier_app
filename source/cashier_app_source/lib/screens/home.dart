@@ -1,3 +1,4 @@
+import 'package:cashier_app_source/screens/bonus.dart';
 import 'package:cashier_app_source/screens/otp.dart';
 import 'package:cashier_app_source/screens/profile.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,16 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.person),
             color: Color(brandWhite),
           ),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                bc,
+                MaterialPageRoute(builder: (newpage) => BonusScreen()),
+              );
+            },
+            icon: Icon(Icons.check_circle),
+            color: Color(brandWhite),
+          ),
         ],
       ),
 
@@ -42,9 +53,18 @@ class HomeScreen extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            IconButton(icon: Icon(color:Color(brandWhite),Icons.casino), onPressed: () {}),
-            IconButton(icon: Icon(color:Color(brandWhite),Icons.leaderboard), onPressed: () {}),
-            IconButton(icon: Icon(color:Color(brandWhite),Icons.live_tv), onPressed: () {}),
+            IconButton(
+              icon: Icon(color: Color(brandWhite), Icons.casino),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(color: Color(brandWhite), Icons.leaderboard),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(color: Color(brandWhite), Icons.live_tv),
+              onPressed: () {},
+            ),
           ],
         ),
       ),

@@ -10,7 +10,7 @@ class BonusScreen extends StatelessWidget {
       backgroundColor: Color(brandBlack),
       body: SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(bc).size.height,
+          // height: MediaQuery.of(bc).size.height,
           child: Padding(
             padding: EdgeInsets.all(30),
             child: SizedBox(
@@ -20,7 +20,7 @@ class BonusScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(bottom:100),
+                    padding: const EdgeInsets.only(bottom: 100),
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: IconButton(
