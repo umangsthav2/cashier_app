@@ -18,6 +18,16 @@ class ProfileScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pop(bc);
+                      },
+                      icon: Icon(Icons.arrow_back),
+                      color: Color(brandWhite),
+                    ),
+                  ),
                   CircleAvatar(
                     radius: 75,
                     backgroundImage: NetworkImage(
@@ -48,7 +58,10 @@ class ProfileScreen extends StatelessWidget {
                               textAlign: TextAlign.center,
                               decoration: InputDecoration(
                                 hintText: "Total Deposit",
-                                suffixIcon: IconButton(onPressed: () {},icon: Icon(Icons.remove_red_eye_rounded)),
+                                suffixIcon: IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.remove_red_eye_rounded),
+                                ),
                                 filled: true,
                                 fillColor: Color(brandWhite),
                                 border: OutlineInputBorder(
@@ -68,7 +81,10 @@ class ProfileScreen extends StatelessWidget {
                             child: TextField(
                               textAlign: TextAlign.center,
                               decoration: InputDecoration(
-                                suffixIcon: IconButton(onPressed: () {},icon: Icon(Icons.remove_red_eye_rounded)),
+                                suffixIcon: IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.remove_red_eye_rounded),
+                                ),
                                 hintText: "Total Withdraw",
                                 filled: true,
                                 fillColor: Color(brandWhite),

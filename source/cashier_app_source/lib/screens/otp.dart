@@ -18,6 +18,16 @@ class OTPScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                                    Align(
+                    alignment: Alignment.centerLeft,
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.pop(bc);
+                      },
+                      icon: Icon(Icons.arrow_back),
+                      color: Color(brandWhite),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 5),
                     child: Text(

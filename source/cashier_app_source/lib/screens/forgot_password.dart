@@ -69,8 +69,10 @@ class ForgotPasswordScreen extends StatelessWidget {
                         onPressed: () {
                           Navigator.pop(bc);
                         },
-                        icon: Icon(Icons.arrow_back_outlined,
-                        color:Color(brandWhite)),
+                        icon: Icon(
+                          Icons.arrow_back_outlined,
+                          color: Color(brandWhite),
+                        ),
                         label: Text(
                           "Back",
                           style: TextStyle(
