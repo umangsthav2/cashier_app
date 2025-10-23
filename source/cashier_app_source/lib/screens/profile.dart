@@ -27,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 20, bottom: 50),
                     child: Text(
-                      "Sandip Bogati",
+                      "Sandip Buggati",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
