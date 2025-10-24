@@ -1,5 +1,6 @@
 import 'package:cashier_app_source/screens/leaderboard.dart';
 import 'package:cashier_app_source/screens/bonus.dart';
+import 'package:cashier_app_source/screens/personal_detail.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/welcome.dart';

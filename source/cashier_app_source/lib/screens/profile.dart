@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/personal_detail.dart';
 import 'package:cashier_app_source/screens/statement.dart';
 import 'package:cashier_app_source/screens/welcome.dart';
 import 'package:flutter/material.dart';
@@ -149,15 +150,26 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 05, bottom: 20),
-                    child: TextField(
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.manage_accounts_rounded),
-                        hintText: "Personal Details",
-                        filled: true,
-                        fillColor: Color(brandWhite),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(primaryColor),
+                        minimumSize: Size(double.infinity, 50),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          bc,
+                          MaterialPageRoute(
+                            builder: (newpage) => PersonalDetailScreen(),
+                          ),
+                        );
+                      },
+                      icon: Icon(Icons.manage_accounts_rounded, color: Color(brandWhite)),
+                      label: Text(
+                        "Personal Details",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Color(brandWhite),
                         ),
                       ),
                     ),
