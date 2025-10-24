@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/bonus.dart';
+import 'package:cashier_app_source/screens/leaderboard.dart';
 import 'package:cashier_app_source/screens/otp.dart';
 import 'package:cashier_app_source/screens/profile.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,12 @@ class HomeScreen extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(color: Color(brandWhite), Icons.leaderboard),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  bc,
+                  MaterialPageRoute(builder: (newpage) => LeaderboardScreen()),
+                );
+              },
             ),
             IconButton(
               icon: Icon(color: Color(brandWhite), Icons.live_tv),
