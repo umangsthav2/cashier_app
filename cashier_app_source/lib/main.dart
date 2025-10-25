@@ -1,3 +1,4 @@
+import 'package:cashier_app_source/screens/game.dart';
 import 'package:cashier_app_source/screens/leaderboard.dart';
 import 'package:cashier_app_source/screens/bonus.dart';
 import 'package:cashier_app_source/screens/personal_detail.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: WelcomeScreen(),
+      home: GameScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
