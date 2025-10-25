@@ -1,6 +1,7 @@
-import 'package:cashier_app_source/screens/forgot_password.dart';
+import 'package:cashier_app_source/screens/home.dart';
 import 'package:cashier_app_source/screens/personal_detail.dart';
 import 'package:cashier_app_source/screens/statement.dart';
+import 'package:cashier_app_source/screens/success.dart';
 import 'package:cashier_app_source/screens/welcome.dart';
 import 'package:flutter/material.dart';
 import '../utils/colors.dart';
@@ -235,7 +236,7 @@ class GameScreen extends StatelessWidget {
                         Navigator.pushReplacement(
                           bc,
                           MaterialPageRoute(
-                            builder: (newpage) => WelcomeScreen(),
+                            builder: (newpage) => SuccessScreen(),
                           ),
                         );
                       },

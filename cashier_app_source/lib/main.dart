@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Color(primaryColor)),
       ),
-      home: GameScreen(),
+      home: WelcomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

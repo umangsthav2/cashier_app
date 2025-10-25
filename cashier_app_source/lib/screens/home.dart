@@ -1,4 +1,5 @@
 import 'package:cashier_app_source/screens/bonus.dart';
+import 'package:cashier_app_source/screens/game.dart';
 import 'package:cashier_app_source/screens/leaderboard.dart';
 import 'package:cashier_app_source/screens/otp.dart';
 import 'package:cashier_app_source/screens/profile.dart';
@@ -30,20 +31,20 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 bc,
-                MaterialPageRoute(builder: (newpage) => ProfileScreen()),
+                MaterialPageRoute(builder: (newpage) => BonusScreen()),
               );
             },
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.check_circle),
             color: Color(brandWhite),
           ),
           IconButton(
             onPressed: () {
               Navigator.push(
                 bc,
-                MaterialPageRoute(builder: (newpage) => BonusScreen()),
+                MaterialPageRoute(builder: (newpage) => ProfileScreen()),
               );
             },
-            icon: Icon(Icons.check_circle),
+            icon: Icon(Icons.person),
             color: Color(brandWhite),
           ),
         ],
@@ -101,10 +102,71 @@ class HomeScreen extends StatelessWidget {
                   ),
                   CarouselSlider(
                     items: [
-                      Image.asset("assets/images/gameImages/juwaLandscape.jpg"),
-                      Image.asset("assets/images/gameImages/juwaLandscape.jpg"),
-                      Image.asset("assets/images/gameImages/juwaLandscape.jpg"),
-                      Image.asset("assets/images/gameImages/juwaLandscape.jpg"),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            bc,
+                            MaterialPageRoute(
+                              builder: (newpage) => GameScreen(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          "assets/images/gameImages/juwaLandscape.jpg",
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            bc,
+                            MaterialPageRoute(
+                              builder: (newpage) => GameScreen(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          "assets/images/gameImages/juwaLandscape.jpg",
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            bc,
+                            MaterialPageRoute(
+                              builder: (newpage) => GameScreen(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          "assets/images/gameImages/juwaLandscape.jpg",
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            bc,
+                            MaterialPageRoute(
+                              builder: (newpage) => GameScreen(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          "assets/images/gameImages/juwaLandscape.jpg",
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            bc,
+                            MaterialPageRoute(
+                              builder: (newpage) => GameScreen(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          "assets/images/gameImages/juwaLandscape.jpg",
+                        ),
+                      ),
                     ],
                     options: CarouselOptions(
                       // height: 600,
